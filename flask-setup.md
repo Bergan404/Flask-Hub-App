@@ -56,3 +56,18 @@ To add routes to the application inside the **app.py file** you can add this, th
 def about():
     return '<h3>This is a Flask web application.</h3>'
 ```
+
+To add a template for the page we need to call *render_template* also create a templates folder to hold all the files:
+
+```
+from flask import Flask, render_template
+
+@app.route('/about/')
+def about():
+    return render_template('about.html')
+```
+
+```
+├── templates
+        └── <each-template>.html
+```
