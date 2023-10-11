@@ -45,3 +45,14 @@ Then specify that you want to run the application in development mode (so you ca
 
 Lastly, run the application using the flask run command:
 - flask run
+
+
+<h1>Step 4 — Routes and View Functions</h1>
+
+To add routes to the application inside the **app.py file** you can add this, this would be added under the (/) route:
+
+```
+@app.route('/about/')
+def about():
+    return '<h3>This is a Flask web application.</h3>'
+```
