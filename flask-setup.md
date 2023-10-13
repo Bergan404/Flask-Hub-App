@@ -10,12 +10,15 @@ SETUP HELP - https://www.digitalocean.com/community/tutorials/how-to-create-your
 
 Create a project folder and a .venv folder within:
 - python3 -m venv .venv
+- virtualenv env
 
 Before you work on your project, activate the corresponding environment:
 - . .venv/bin/activate
+- source env/bin/activate
 
 Within the activated environment, use the following command to install Flask:
 - pip install Flask
+- pip install flask-sqlalchemy
 
 <h1>Step 2 — Creating a Simple Application</h1>
 
@@ -45,6 +48,7 @@ Then specify that you want to run the application in development mode (so you ca
 
 Lastly, run the application using the flask run command:
 - flask run
+- python3 app.py
 
 
 <h1>Step 4 — Routes and View Functions</h1>
