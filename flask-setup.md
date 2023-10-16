@@ -75,3 +75,6 @@ def about():
 ├── templates
         └── <each-template>.html
 ```
+
+SCSS
+ pip install Flask Flask-Assets libsass
